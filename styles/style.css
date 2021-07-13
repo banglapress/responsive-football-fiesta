@@ -3,13 +3,14 @@
 
 /* common styles or utilities */
 body{
-    font-family: 'Poppins', sans-serif;    
+    font-family: 'Poppins', sans-serif;   
+    max-width: 1440px;  
 }
 
 /* header area styles */
 header{
     background-color: #2D25A0;
-    max-width: 1440px; /* it has to be changed later// */
+    /* it has to be changed later// */
     height: 677px;
 }
 
@@ -65,6 +66,53 @@ h1{
     transition: transform 2s ease-in-out;
 }
 
+/*player cards styles */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: #f7f3f3;   
+}
+
+.players-album{    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.players-frame {
+    width: 330px;
+    height: 474x;
+    margin: 15px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.08);
+    background-color: white;
+    padding: 15px;
+    /* position: relative;
+    overflow: hidden; */
+}
+.players-frame img {
+    width: 100%;
+}
+.player-detail {
+    /* display: none; */
+    /* position: absolute; */
+    /* width: 300px; */
+    /* top: 0; */
+}
+
+.player-detail h3 {
+    color: #18191F;
+    font-size: 28px;
+    font-size: 700;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.player-detail p {
+    margin-top: 10px;   
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+}
 
 
 /*------------------
@@ -73,24 +121,45 @@ h1{
 
 /* Mobile Devices */
 @media only screen and (max-width:688px) {
+    header{
+        display: flex;
+        /* justify-content: center; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        text-align: center;
+        padding-top: 5%;
+    }
+    nav{
+        display: none;
+    }
     h1{
-        font-size: 1.5em;
+        font-size: 3em;
     }
-    .link-button{
-        padding: 10px 10px;        
-        color: white;
-        font-weight: 500;        
-    }
+    
     .top-banner{
         flex-direction: column;
         align-items: center;
     }
-    .half-width{        
+    .half-width{  
+        width: 100%;      
         padding-left: 0;
         padding-bottom: 20px;
     }
 
     .half-width img{
-        width: 150%;
+        width: 100%;
     }
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    
+    .players-album{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    /* .player, .blog, .courses{        
+        flex-direction: column;
+        align-items: center;
+    } */
 }
