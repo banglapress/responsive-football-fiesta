@@ -13,8 +13,7 @@ body{
 
 /* header area styles */
 header{
-    background-color: #2D25A0;    
-    height: 677px;
+    background-color: #2D25A0;        
 }
 
 /* navigation button styles */
@@ -55,8 +54,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 49px;
-    margin-bottom: 150px;
+    margin-top: 49px;    
 }
 
 .half-width{    
@@ -274,9 +272,6 @@ footer p{
 @media only screen and (max-width:688px) {
     header{
         display: flex;
-        /* justify-content: center; */
-        /* flex-direction: column; */
-        /* align-items: center; */
         text-align: center;
         padding-top: 5%;
     }
@@ -336,10 +331,7 @@ footer p{
     }
 }
 /* Tablet Devices */
-@media only screen and (min-width:688px) and (max-width:992px) {   
-    .players-album{
-        grid-template-columns: repeat(2, 1fr);        
-    }
+@media only screen and (min-width:688px) and (max-width:992px) {    
     nav {        
         padding-top: 2%;
     }
@@ -350,8 +342,9 @@ footer p{
         padding: 10px 10px;        
     }
     header{
-        background-color: #2D25A0;    
-        height: 500px;
+        background-color: #2D25A0; 
+        margin-bottom: 0;   
+        
     }
     #nav-box1{
         width: 80%;        
@@ -366,7 +359,7 @@ footer p{
         color: white;
     }
     .half-width{  
-        width: 100%;      
+        width: 90%;      
         padding-left: 10%;
         padding-bottom: 20px;        
     }
@@ -374,6 +367,19 @@ footer p{
     .half-width img{
         width: 100%;
     }
+    .container{
+        width: 90%;        
+    }
+    .players-album{
+        grid-template-columns: repeat(2, 1fr);        
+    }
+    .players-frame {
+        width: 100%;                
+    }
+    .players-frame img {
+        width: 100%;
+    }
+    
     .highlights{        
         width: 90%;
         margin: 2%;
