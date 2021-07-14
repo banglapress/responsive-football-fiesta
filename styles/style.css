@@ -272,14 +272,15 @@ footer p{
 @media only screen and (max-width:688px) {
     header{
         display: flex;
-        text-align: center;
-        padding-top: 5%;
+        flex-direction: column;        
     }
+    nav a{
+        display: block;
+        font-size: 12px;         
+    }
+    /* navigation bar is not showing as a bar, because still I don't know how to make responsive nave bar tab, when I learn it I will add it. */
 
-    /* navigation bar is hidden, because still I don't know how to make responsive nave bar tab, when I learn it I will add it. */
-    nav{
-        display: none;
-    }
+    
     h1{
         font-size: 3em;
     }
