@@ -18,9 +18,10 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    align-items: center;
     padding-top: 42px;
-    margin-left: 156px;
-    margin-right: 124px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 nav a {
@@ -31,6 +32,8 @@ nav a {
     margin-right: 36px;
     color: white;
 }
+
+
 .link-button{
     text-decoration: none;
     background-color: #E02C6D;
@@ -47,13 +50,15 @@ h1{
 .top-banner {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 49px;
     margin-bottom: 150px;
 }
 
-.half-width{
+.half-width{    
     width: 50%;
     padding-left: 7%;
+    text-align: left;
 }
 
 .half-width img{
@@ -180,13 +185,14 @@ h2{
 }
 .free-jersey:hover h3{
     font-size: 2em;
-    transform:translate(25%);
+    transform:translate(10%);
     transition: transform 4s ease-in-out;
     color: red;    
 }
 .free-jersey p{
     font-size: 24px;
     margin: 0;
+    text-align: center;
 }
 .submit-form {
     display: flex;
@@ -215,7 +221,7 @@ footer{
     align-items: center;
 }
 footer img{
-    height: 110px;
+    width: 25%;
 }
 footer .footer-icon{
     font-size: 24px;
@@ -257,12 +263,12 @@ footer p{
     }
     .half-width{  
         width: 100%;      
-        padding-left: 0;
+        padding-left: 10%;
         padding-bottom: 20px;
     }
 
     .half-width img{
-        width: 100%;
+        width: 90%;
     }
     .container{
         width: 100%;
@@ -270,8 +276,7 @@ footer p{
     }
     
     .players-album{
-        grid-template-columns: repeat(1, 1fr);
-        
+        grid-template-columns: repeat(1, 1fr);        
     }
     .calendar {      
         width: 80%;
@@ -282,5 +287,45 @@ footer p{
     .submit-form {
         display: flex;
         flex-direction: column;
+    }
+}
+/* Tablet Devices */
+@media only screen and (min-width:688px) and (max-width:992px) {   
+    .players-album{
+        grid-template-columns: repeat(2, 1fr);        
+    }
+    nav {        
+        padding-top: 2%;
+    }
+    nav a {        
+        margin-right: 2%;
+    }
+    .link-button{     
+        padding: 10px 10px;        
+    }
+    header{
+        background-color: #2D25A0;    
+        height: 500px;
+    }
+    #nav-box1{
+        width: 80%;        
+        }   
+    #nav-box2{
+        width: 20%;
+        text-align: center;
+    }
+    
+    h1{
+        font-size: 3em;
+        color: white;
+    }
+    .half-width{  
+        width: 100%;      
+        padding-left: 10%;
+        padding-bottom: 20px;        
+    }
+
+    .half-width img{
+        width: 90%;
     }
 }
